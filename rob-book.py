@@ -17,4 +17,3 @@ if chosen_guru in coding_gurus:
     print("The guru " + chosen_guru + " will be in contact shortly.")
 else:
     print("That username does not belong to a coding guru.")
-
