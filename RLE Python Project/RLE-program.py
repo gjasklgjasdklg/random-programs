@@ -1,7 +1,6 @@
-quit_program = False
+import sys
 
 def menu():
-
     print("""
     1: Enter RLE
     2: Display ASCII art
@@ -12,15 +11,13 @@ def menu():
     choice = input("Enter a number > ")
     if choice == "1":
         pass
-    if choice == "2":
+    elif choice == "2":
         pass
-    if choice == "3":
+    elif choice == "3":
         pass
-    if choice == "4":
+    elif choice == "4":
         pass
-    if choice == "5":
-        print("You will regret that decision...") 
-        quit_program == True
+    elif choice == "5":
+        quit()
 
-while quit_program == False:
-    menu()
+menu()
