@@ -1,5 +1,3 @@
-import sys
-
 def menu():
     print("""
     1: Enter RLE
@@ -19,5 +17,8 @@ def menu():
         pass
     elif choice == "5":
         quit()
-
+    else:
+        print("Unrecognized input")
+        menu()
+        
 menu()
