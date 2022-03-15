@@ -8,7 +8,7 @@ def menu():
 
     choice = input("Enter a number > ")
     if choice == "1":
-        pass
+        enterRLE()
     elif choice == "2":
         pass
     elif choice == "3":
@@ -20,5 +20,16 @@ def menu():
     else:
         print("Unrecognized input")
         menu()
-        
+
+def enterRLE():
+    amountOfLines = int(input("How many lines of RLE do you want to input? "))
+    while amountOfLines < 2:
+        print("Please enter a number of lines greater than or equal to 2.")
+        amountOfLines = int(input("How many lines of RLE do you want to input? "))
+    
+    for i in range(1, (amountOfLines + 2)):
+        enteredRLE = input("Enter line {} > ").format(i)
+        enteredRLEArray = enteredRLE.split("")
+
+
 menu()
