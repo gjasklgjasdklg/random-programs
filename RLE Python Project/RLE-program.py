@@ -1,3 +1,5 @@
+enteredRLEList = []
+
 def menu():
     print("""
     1: Enter RLE
@@ -22,14 +24,18 @@ def menu():
         menu()
 
 def enterRLE():
+
     amountOfLines = int(input("How many lines of RLE do you want to input? "))
     while amountOfLines < 2:
         print("Please enter a number of lines greater than or equal to 2.")
         amountOfLines = int(input("How many lines of RLE do you want to input? "))
     
-    for i in range(1, (amountOfLines + 2)):
+    for i in range(1, (amountOfLines + 1)):
         enteredRLE = input("Enter line {} > ").format(i)
-        enteredRLEArray = enteredRLE.split("")
+        enteredRLEList.append([i for i in enteredRLE])
+
+def convertToASCII():
+    pass
 
 
 menu()
