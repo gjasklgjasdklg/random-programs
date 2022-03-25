@@ -14,7 +14,7 @@ def menu():
     elif choice == "2":
         pass
     elif choice == "3":
-        pass
+        convertToASCII()
     elif choice == "4":
         pass
     elif choice == "5":
@@ -30,12 +30,20 @@ def enterRLE():
         print("Please enter a number of lines greater than or equal to 2.")
         amountOfLines = int(input("How many lines of RLE do you want to input? "))
     
-    for i in range(1, (amountOfLines + 1)):
-        enteredRLE = input("Enter line {} > ").format(i)
-        enteredRLEList.append([i for i in enteredRLE])
+    for i in range(amountOfLines):
+        enteredRLE = input("Enter line " + str(i + 1) + " > ")
+        enteredRLEList.append(enteredRLE)
+    menu()
+
 
 def convertToASCII():
-    pass
+    for i in range(len(enteredRLEList)):
+        for value in range(len(enteredRLEList[i])):
+            line = ""
+            frequency = enteredRLEList[i][value] + enteredRLEList[i][value + 1] 
+            character = 
+            
 
 
 menu()
+
