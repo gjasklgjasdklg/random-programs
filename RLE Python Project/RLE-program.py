@@ -33,20 +33,21 @@ def enterRLE():
     for i in range(amountOfLines):
         enteredRLE = input("Enter line " + str(i + 1) + " > ")
         enteredRLEList.append(enteredRLE)
+    print("Here is your ASCII Art:\n")
     convertToASCII()
     menu()
 
 
 def convertToASCII():
     for i in range(len(enteredRLEList)):
-        for value in range(len(enteredRLEList[i])):
-            line = ""
-            frequency = enteredRLEList[i][value] + enteredRLEList[i][value + 1]
-            print(frequency) 
-            character = enteredRLEList[i][value + 2]
-            rle_set = character * int(frequency)
-            line = line + rle_set
-            print(line)
+        if len(enteredRLEList[i]) > 3:
+            
+        line = ""
+        frequency = enteredRLEList[i][0] + enteredRLEList[i][1]
+        character = enteredRLEList[i][2]
+        rle_set = character * int(frequency)
+        line = line + rle_set
+        print(line)
 
 menu()
 
