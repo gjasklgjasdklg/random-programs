@@ -29,26 +29,17 @@ def enterRLE():
     while amountOfLines < 2:
         print("Please enter a number of lines greater than or equal to 2.")
         amountOfLines = int(input("How many lines of RLE do you want to input? "))
-    kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
-    for i in range(amountOfLines)kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd:
-        enteredRLE = input("Enterkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd line " + str(i + 1) + " > ")
-        enteredRLEList.append(entkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgderedRLE)
-    print("Here is your ASCII Artkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd:\n")
-    convertToASCII()kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
-    menu()kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
-kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
-kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
-def convertToASCII():kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
-    for i in range(len(enteredRLEkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgdList)):
-        while enteredRLEList[i][0kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd].isdigit() == True:
-            line = ""kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
-            frequency = enteredRLkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgdEList[i][0] + enteredRLEList[i][1]
-            character = enteredRLkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgdEList[i][2]
-            rle_set = character *kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd int(frequency)
-            line = line + rle_setkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
-            for _ in range(3):kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
-                 enteredRLEList[ikjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd] = enteredRLEList[i][1 : : ]
-        print(line)
+    for i in range(amountOfLines):
+        enteredRLE = input("Enter line " + str(i + 1) + " > ")
+        enteredRLEList.append(enteredRLE)
+    print("Here is your ASCII Art:\n")
+    convertToASCII()
+    menu()
+
+def convertToASCII():
+    ASCII_output = []
+    for i in range(len(enteredRLEList)):
+        line = enteredRLEList[i]
 
 menu()
 
