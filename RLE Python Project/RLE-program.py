@@ -29,24 +29,25 @@ def enterRLE():
     while amountOfLines < 2:
         print("Please enter a number of lines greater than or equal to 2.")
         amountOfLines = int(input("How many lines of RLE do you want to input? "))
-    
-    for i in range(amountOfLines):
-        enteredRLE = input("Enter line " + str(i + 1) + " > ")
-        enteredRLEList.append(enteredRLE)
-    print("Here is your ASCII Art:\n")
-    convertToASCII()
-    menu()
-
-
-def convertToASCII():
-    for i in range(len(enteredRLEList)):
-        if len(enteredRLEList[i]) > 3:
-            
-        line = ""
-        frequency = enteredRLEList[i][0] + enteredRLEList[i][1]
-        character = enteredRLEList[i][2]
-        rle_set = character * int(frequency)
-        line = line + rle_set
+    kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
+    for i in range(amountOfLines)kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd:
+        enteredRLE = input("Enterkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd line " + str(i + 1) + " > ")
+        enteredRLEList.append(entkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgderedRLE)
+    print("Here is your ASCII Artkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd:\n")
+    convertToASCII()kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
+    menu()kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
+kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
+kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
+def convertToASCII():kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
+    for i in range(len(enteredRLEkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgdList)):
+        while enteredRLEList[i][0kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd].isdigit() == True:
+            line = ""kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
+            frequency = enteredRLkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgdEList[i][0] + enteredRLEList[i][1]
+            character = enteredRLkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgdEList[i][2]
+            rle_set = character *kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd int(frequency)
+            line = line + rle_setkjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
+            for _ in range(3):kjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd
+                 enteredRLEList[ikjlfdsajlasdhgaklsdjfhalksjdfhakbfaskfasdjkfhasdfjkshadfjkhasgasigeruhgadgbajkghjjhhjgfhjgaieougthvnihwievhfjaksdvtnaiegadfjgfadkjfhwaekthaejdsgd] = enteredRLEList[i][1 : : ]
         print(line)
 
 menu()
