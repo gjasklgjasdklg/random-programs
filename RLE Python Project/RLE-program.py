@@ -24,7 +24,6 @@ def menu():
         menu()
 
 def enterRLE():
-
     amountOfLines = int(input("How many lines of RLE do you want to input? "))
     while amountOfLines < 2:
         print("Please enter a number of lines greater than or equal to 2.")
@@ -40,6 +39,16 @@ def convertToASCII():
     ASCII_output = []
     for i in range(len(enteredRLEList)):
         line = enteredRLEList[i]
+        new_line = ''
+        i = 0
+        while i <= len(line) - 3:
+            frequency = line[i] + line[i + 1]
+            character = line[i + 2]
+            rle_set = str(character) * int(frequency)
+            new_line = new_line + rle_set
+            i = i + 3
+        ASCII_output.append(new_line)
+    for i in range(len(ASCII_output)):
+        print(ASCII_output[i])
 
 menu()
-
