@@ -12,9 +12,9 @@ def menu():
     if choice == "1":
         enterRLE()
     elif choice == "2":
-        pass
+        displayASCII()
     elif choice == "3":
-        convertToASCII()
+        RLE_fileToASCII()
     elif choice == "4":
         pass
     elif choice == "5":
@@ -50,5 +50,21 @@ def convertToASCII():
         ASCII_output.append(new_line)
     for i in range(len(ASCII_output)):
         print(ASCII_output[i])
+
+def displayASCII():
+    file_name = input("Enter the filename that you would like to open (include extension). If the file is not in the same directory as this file, please provide the full path: ")
+    with open(file_name, "r") as ASCII_art:
+        art = ASCII_art.read()
+    print(art)
+    menu()
+
+def RLE_fileToASCII():
+    RLE_file = input("Enter the filename that you would like to open (include extension). If the file is not in the same directory as this file, please provide the full path: ")
+    with open(RLE_file, "r") as openedFile:
+        for count, line in enumerate(openedFile):
+            enteredRLE = line
+            enteredRLEList.append(enteredRLE)
+    convertToASCII()
+    menu()
 
 menu()
