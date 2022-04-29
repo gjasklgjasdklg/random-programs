@@ -1,4 +1,5 @@
 enteredRLEList = []
+enteredASCIIList = []
 
 def menu():
     print("""
@@ -16,7 +17,7 @@ def menu():
     elif choice == "3":
         RLE_fileToASCII()
     elif choice == "4":
-        pass
+        ASCII_fileToRLE()
     elif choice == "5":
         quit()
     else:
@@ -66,5 +67,37 @@ def RLE_fileToASCII():
             enteredRLEList.append(enteredRLE)
     convertToASCII()
     menu()
+
+def ASCII_fileToRLE():
+    ASCII_file = input("Enter the filename that you would like to open (include extension). If the file is not in the same directory as this file, please provide the full path: ")
+    with open(ASCII_file, "r") as openedFile:
+        for count, line in enumerate(openedFile):
+            enteredASCII = line.replace("\n", "")
+            enteredASCIIList.append(enteredASCII.rstrip("\n"))
+    for i in range(len(enteredASCIIList)):
+        line = enteredASCIIList[i]
+        newline = ""
+        i = 0
+        while i < len(line):
+            character = line[i]
+            frequency = 0
+            while i < len(line):
+                if character == line[i]:
+                    frequency += 1
+                    i += 1
+                else:
+                    break
+            if frequency < 10:
+                str_frequency = "0" + str(frequency)
+            else:
+                str_frequency = str_frequency
+            compressed_set = str_frequency + character
+            newline = newline + compressed_set
+            enteredRLEList.append(newline)
+
+    with open("rleresult.txt", "x") as rleresultfile:
+        for i in range(len(enteredRLEList)):
+            rleresultfile.write(enteredRLEList[i] + "\n")
+
 
 menu()
